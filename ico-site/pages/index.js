@@ -177,6 +177,13 @@ export default function Home() {
 
   }
 
+  async function pageLoad() {
+    setInterval(async() => {
+      await getTokensToBeClaimed()
+    }, 5 * 1000);
+
+  }
+
   function renderBody() {
 
     if(loading){
@@ -213,6 +220,8 @@ export default function Home() {
         </div>
       )
 
+    
+
     } 
     
 
@@ -231,6 +240,7 @@ export default function Home() {
       getBalanceOfCryptoDevToken();
       getTotalTokenMinted();
       getTokensToBeClaimed();
+      pageLoad();
 
     }
 
