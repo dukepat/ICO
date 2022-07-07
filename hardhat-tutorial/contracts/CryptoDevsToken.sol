@@ -5,6 +5,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "./ICryptoDevs.sol";
 // Contract Address: 0x686d91B9E026E86BEfA123d8146F27Eadf4638d9
+// Verified Contract: 0x87cE4C75aD63B9617c29090AAa9cCE95B42487e1
 contract CryptoDevToken is ERC20, Ownable {
 
     ICryptoDevs CryptoDevsNFT;
